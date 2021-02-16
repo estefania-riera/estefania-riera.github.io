@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Estefanía Riera Romero: Portfolio</title>
+
+        <meta name="viewport" content="width=570, user-scalable=no" />
+        <meta name="description" content="En esta sección se encuentran los proyectos realizados y una breve descripción sobre el mismo. Desde aquí se puede acceder a los detalles de cada proyecto." />
+
+        <link type="text/css" rel="stylesheet" href="css/bulma.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/all.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+        <script src="script/all.min.js"></script>
+    </head>
+    <body class="invisible">
+        <header>
+            <h1 class="inline-this">Estefanía Riera</h1> - <h2 class="inline-this">Portfolio</h2>        
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html"><i class="fas fa-user fa-2x"></i> Sobre mí</a></li>
+                    <li class="selected-nav-object"><a href="projects.html"><i class="fas fa-folder fa-2x"></i> Proyectos</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope fa-2x"></i> Contacto</a></li>
+                    <li><a href="language.html"><i class="fas fa-globe-americas fa-2x"></i> Idioma</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <br />
+            <h1>Proyectos</h1>        
+            <div class="columns full-height">
+                <div class="column full-height bottom-fixer">
+                    <br />
+                    <svg style="width: 100%; height: auto;" viewBox="0 0 280 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg x="100" y="0" overflow="visible">
+                            <g class="animated-hexagon" onclick="hex_change(1)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                            </g>
+                        </svg>
+                        <svg x="100" y="80" overflow="visible">
+                            <g class="animated-hexagon" onclick="hex_change(2)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#ff5e67" stroke-width="1" />
+                                <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/devoluiva.png"></image>
+                            </g>
+                        </svg>
+                        <svg x="100" y="160" overflow="visible">
+                            <g class="animated-hexagon" onclick="hex_change(3)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                            </g>
+                        </svg>                       
+                        <svg x="30" y="40" overflow="visible">
+                            <g class="animated-hexagon" onclick="hex_change(4)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                            </g>
+                        </svg>
+                        <svg x="170" y="40" overflow="visible">
+                            <g class="animated-hexagon" onclick="hex_change(5)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                            </g>
+                        </svg>
+                        <svg x="170" y="120" overflow="visible">
+                            <g class="animated-hexagon" onclick="hex_change(6)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                            </g>
+                        </svg>
+                        <svg x="30" y="120" overflow="visible">
+                            <g class="animated-hexagon" onclick="hex_change(7)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                                <text transform="translate(5, 25)" x="12" y="15" fill="snow" font-size="10">
+                                    New project
+                                </text>
+                                <text transform="translate(5, 25)" x="9" y="27" fill="snow" font-size="10" font-weight="bold">
+                                    coming soon
+                                </text>
+                            </g>
+                        </svg>
+                    </svg>
+
+                    <script>                        
+                        window.onload = function () {
+                            hex_change(-1);
+                            document.getElementsByTagName('body')[0].style.display = 'unset';
+                        };
+
+                        function hex_change(id) {
+                            var projectTitle = '';
+                            var descriptionText = '';
+                            var dateText = '';
+                            var tags = [];
+
+                            switch (id) {
+                                case 2:
+                                    projectTitle = 'DevoluIVA';
+                                    descriptionText = 'Evaluación de la aplicación móvil para la gestión de gastos ' +
+                                        'empresariales y la recuperación del IVA en términos de usabilidad, accesibilidad, ' +
+                                        'Human-Centered-Design (HCD) y Material Design.';
+
+                                    dateText = '2019-20';
+                                    tags = ['User Research', 'UX/UI', 'Rapid prototyping', 'Mobile App'];
+                                    document.getElementById('project-button').style = '';
+                                    break;
+                                default:
+                                    projectTitle = 'Selecciona un proyecto';
+                                    descriptionText = 'Selecciona un proyecto para ver su descripción.';
+                                    document.getElementById('project-button').style = 'display: none;';
+                                    break;
+                            }
+
+                            document.getElementById('project-title').innerHTML = projectTitle + (dateText != '' ? '  ' + dateText + '' : '');
+                            document.getElementById('project-description').innerHTML = descriptionText;
+
+                            var tagsPlace = document.getElementById('project-tags-place');
+                            tagsPlace.innerHTML = '';
+
+                            for (var i = 0; i < tags.length; ++i) {
+                                var el = document.createElement('span');
+                                el.className = 'tag is-info is-light tag-margin-fixer';
+                                el.innerHTML = tags[i];
+
+                                tagsPlace.appendChild(el);
+                            }
+                        }
+                    </script>
+                </div>
+                <div class="column full-height">
+                    <br />
+                    <h2 id="project-title"></h2>
+                    <hr style="margin-top: 0em; background-color: #313453; height: 4px;" />
+                    <p id="project-description"></p>
+                                        
+                    <br />
+                    <div id="project-tags-place"></div>
+
+                    <a id="project-button" style="display: none;" class="button is-primary is-outlined is-rounded button-vertical-margin"
+                       href="projects/devoluiva.html">Ver proyecto</a>
+                    <br />
+
+                    <div aria-label="Test"></div>
+                    <div aria-label="Test2"></div>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column center-text">
+                    <a href="mailto:rieraromeroestefania@gmail.com"><i class="fas fa-envelope social-icon fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/estefania-riera-romero/"><i class="fab fa-linkedin social-icon fa-2x"></i></a>
+                </div>
+            </div>
+            <br />
+        </main>
+    </body>
+</html>
