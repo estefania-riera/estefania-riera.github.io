@@ -18,16 +18,16 @@
             <h1 class="inline-this">Estefanía Riera</h1> - <h2 class="inline-this">Portfolio</h2>        
             <nav>
                 <ul>
-                    <li><a href="aboutme.html"><i class="fas fa-user fa-2x"></i> Sobre mí</a></li>
-                    <li class="selected-nav-object"><a href="projects.html"><i class="fas fa-folder fa-2x"></i> Proyectos</a></li>
-                    <li><a href="contact.html"><i class="fas fa-envelope fa-2x"></i> Contacto</a></li>
-                    <li><a href="language.html"><i class="fas fa-globe-americas fa-2x"></i> Idioma</a></li>
+                    <li><a href="aboutme.html"><i class="fas fa-user fa-2x"></i> About</a></li>
+                    <li class="selected-nav-object"><a href="projects.html"><i class="fas fa-folder fa-2x"></i> Work</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope fa-2x"></i> Contact</a></li>
+                    <li><a href="language.html"><i class="fas fa-globe-americas fa-2x"></i> Language</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <br />
-            <h1>Proyectos</h1>        
+            <h1>Work</h1>        
             <div class="columns full-height">
                 <div class="column full-height bottom-fixer">
                     <br />
@@ -91,17 +91,17 @@
                             switch (id) {
                                 case 2:
                                     projectTitle = 'DevoluIVA';
-                                    descriptionText = 'Evaluación de la aplicación móvil para la gestión de gastos ' +
-                                        'empresariales y la recuperación del IVA en términos de usabilidad, accesibilidad, ' +
-                                        'Human-Centered-Design (HCD) y Material Design.';
+                                    descriptionText = 'Evaluation of the mobile aplication ' +
+                                        'to manage enterprise expenses and VAT return in terms of usability, accessibility, ' +
+                                        'Human-Centered Design (HCD) and Material Design.';
 
                                     dateText = '2019-20';
-                                    tags = ['User Research', 'UX/UI', 'Rapid prototyping', 'Mobile App'];
+                                    tags = ['UX Research', 'UX/UI', 'Rapid prototyping', 'Mobile App'];
                                     document.getElementById('project-button').style = '';
                                     break;
                                 default:
-                                    projectTitle = 'Selecciona un proyecto';
-                                    descriptionText = 'Selecciona un proyecto para ver su descripción.';
+                                    projectTitle = 'Select a project';
+                                    descriptionText = 'Select a project to see its description.';
                                     document.getElementById('project-button').style = 'display: none;';
                                     break;
                             }
@@ -132,7 +132,7 @@
                     <div id="project-tags-place"></div>
 
                     <a id="project-button" style="display: none;" class="button is-primary is-outlined is-rounded button-vertical-margin"
-                       href="projects/devoluiva.html">Ver proyecto</a>
+                       href="projects/devoluiva.html">See this project</a>
                     <br />
 
                     <div aria-label="Test"></div>
