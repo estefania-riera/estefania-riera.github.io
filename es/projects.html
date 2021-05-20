@@ -50,7 +50,16 @@
                         </svg>                       
                         <svg x="30" y="40" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(4)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#E79A00" stroke-width="1" />
+                                <text transform="translate(5, 25)" x="4" y="15" fill="snow" font-size="10" font-weight="bold">
+                                    Próximamente
+                                </text>
+                                <text transform="translate(5, 25)" x="6" y="26" fill="snow" font-size="10">
+                                    nuevo proyecto
+                                </text>
+                                <text transform="translate(5, 25)" x="26" y="37" fill="snow" font-size="10" font-weight="bold">
+                                    Odín
+                                </text>
                             </g>
                         </svg>
                         <svg x="170" y="40" overflow="visible">
@@ -98,9 +107,16 @@
                                         'empresariales y la recuperación del IVA en términos de usabilidad, accesibilidad, ' +
                                         'Human-Centered-Design (HCD) y Material Design.';
 
-                                    dateText = '2019-20';
                                     tags = ['UX Research', 'UX/UI', 'Rapid prototyping', 'Mobile App'];
                                     document.getElementById('project-button').style = '';
+                                    break;
+                                 case 4:
+                                    projectTitle = 'Odín - En desarrollo';
+                                    descriptionText = 'Diseño de la experiencia de usuario ' +
+                                        'de un sistema de gestión académica y sus distintos módulos.';
+
+                                    tags = ['Accesibilidad','UX Research', 'UX/UI', 'Rapid prototyping', 'Responsive Web Design', 'Mobile First'];
+                                    document.getElementById('project-button').style = 'display: none;';
                                     break;
                                  case 7:
                                     projectTitle = 'Hibiki-An - En desarrollo';
