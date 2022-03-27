@@ -33,8 +33,10 @@
                     <br />
                     <svg style="width: 100%; height: auto;" viewBox="0 0 280 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <svg x="100" y="0" overflow="visible">
-                            <g class="animated-hexagon" onclick="hex_change(1)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                           <g class="animated-hexagon" onclick="hex_change(1)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#007Eae" stroke-width="1" />
+                                <!-- CAIXA BANK -->
+                                <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/caixabank-logo-alt.png"></image>
                             </g>
                         </svg>
                         <svg x="100" y="80" overflow="visible">
@@ -63,13 +65,17 @@
                             </g>
                         </svg>
                         <svg x="170" y="40" overflow="visible">
-                            <g class="animated-hexagon" onclick="hex_change(5)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
-                            </g>
+                            <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#92B9E0" stroke-width="1" />                                
+                            <!-- CATSALUT -->
+                            <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/lms-logo2.png"></image>
                         </svg>
                         <svg x="170" y="120" overflow="visible">
-                            <g class="animated-hexagon" onclick="hex_change(6)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                             <g class="animated-hexagon" onclick="hex_change(6)">
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#000078" stroke-width="1" />                               
+                                <text transform="translate(18, 7)" x="9" y="25" fill="snow" font-size="14" font-weight="bold">UOC</text>
+                                <text transform="translate(8, 20)" x="9" y="25" fill="snow" font-size="10" font-weight="bold">Universitat</text>
+                                <text transform="translate(10, 30)" x="9" y="25" fill="snow" font-size="10" font-weight="bold">Oberta de</text>
+                                <text transform="translate(10, 40)" x="9" y="25" fill="snow" font-size="10" font-weight="bold">Catalunya</text>   
                             </g>
                         </svg>
                         <svg x="30" y="120" overflow="visible">
@@ -101,6 +107,16 @@
                             var tags = [];
 
                             switch (id) {
+                                case 1:                                    
+                                    projectTitle = 'CaixaBank';
+                                    descriptionText = 'Desarrollo del front-end de una herramienta interna para ' +
+                                        'la gestión del parque de cajeros sujeto a las restricciones técnicas de ' +
+                                        'QlikSense. Estrecha relación con los distintos departamentos para alinear ' +
+                                        'objetivos y las necesidades de los usuarios';
+                                    
+                                    tags = ['UX Research', 'UX/UI', 'Rapid prototyping'];
+                                    document.getElementById('project-button').style = 'display: none;';                                    
+                                    break;       
                                 case 2:
                                     projectTitle = 'DevoluIVA';
                                     descriptionText = 'Evaluación de la aplicación móvil para la gestión de gastos ' +
@@ -116,6 +132,29 @@
                                         'del sistema de gestión académico Odín y sus distintos módulos.';
 
                                     tags = ['Accesibilidad','UX Research', 'UX/UI', 'Rapid prototyping', 'Responsive Web Design', 'Mobile First'];
+                                    document.getElementById('project-button').style = 'display: none;';
+                                    break;
+                                case 5:
+                                    //CAT SALUT
+                                    projectTitle = 'La meva /Salut';
+                                      descriptionText = 'Seguimiento y diseño iterativo de la plataforma sanitaria catalana actual, ' +
+                                         'así como la investigación y propuesta del rediseño de la futura aplicación. En ambos casos ' +
+                                         'los diseños han sido tanto para aplicaciones móviles en sistemas Android e iOS como en web ' +
+                                         'con sistema adaptativo. En estos proyectos la accesibilidad fue un factor muy importante a ' +
+                                         'considerar al ser una entidad pública.';
+                                    
+                                    tags = ['Accesibilidad', 'UX Research', 'UX/UI', 'Rapid prototyping', 'Mobile App', 'Web responsive'];
+                                    document.getElementById('project-button').style = 'display: none;';                                    
+                                    break;                                    
+                                    
+                                case 6:
+                                    // UOC
+                                    projectTitle = 'UOC (Universitat Oberta de Catalunya)';
+                                    descriptionText = 'Rediseño del portal en base a los KPI y las estadísticas de Google Analytics, ' +
+                                         'revisión de la arquitectura de la información, así como los estudios de usabilidad de la ' +
+                                         'nueva herramienta del campus virtual.';
+                                    
+                                    tags = ['UX Research', 'UX', 'Accessibility'];
                                     document.getElementById('project-button').style = 'display: none;';
                                     break;
                                  case 7:
