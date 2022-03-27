@@ -34,7 +34,7 @@
                     <svg style="width: 100%; height: auto;" viewBox="0 0 280 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <svg x="100" y="0" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(1)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#D3E4E7" stroke-width="1" />
                                 <!-- CAIXA BANK -->
                                 <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/caixabank-logo.svg"></image>
                             </g>
@@ -66,14 +66,14 @@
                         </svg>
                         <svg x="170" y="40" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(5)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />                                
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#D3E4E7" stroke-width="1" />                                
                                 <!-- CATSALUT -->
                                 <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/lms-logo2.png"></image>
                             </g>
                         </svg>
                         <svg x="170" y="120" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(6)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#D3E4E7" stroke-width="1" />
                                 <!-- UOC -->
                                 <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/uoc_transparent.png"></image>
                             </g>
@@ -107,6 +107,15 @@
                             var tags = [];
 
                             switch (id) {
+                                case 1:
+                                    //CAT SALUT
+                                    projectTitle = 'caixa';
+                                    descriptionText = '';
+                                    
+                                    tags = [];
+                                    document.getElementById('project-button').style = '';                                    
+                                    break;       
+                                    
                                 case 2:
                                     projectTitle = 'DevoluIVA';
                                     descriptionText = 'Evaluation of the mobile aplication ' +
@@ -124,6 +133,24 @@
 
                                     tags = ['Accessibility','UX Research', 'UX/UI', 'Rapid prototyping', 'Responsive Web Design', 'Mobile First'];
                                     document.getElementById('project-button').style = 'display: none;';
+                                    break;
+                                   
+                                case 5:
+                                    //CAT SALUT
+                                    projectTitle = 'catsalut';
+                                    descriptionText = '';
+                                    
+                                    tags = [];
+                                    document.getElementById('project-button').style = '';                                    
+                                    break;                                    
+                                    
+                                case 6:
+                                    // UOC
+                                    projectTitle = 'uoc';
+                                    descriptionText = '';
+                                    
+                                    tags = [];
+                                    document.getElementById('project-button').style = '';
                                     break;
                                     
                                 case 7:
