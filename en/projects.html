@@ -34,7 +34,7 @@
                     <svg style="width: 100%; height: auto;" viewBox="0 0 280 250" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <svg x="100" y="0" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(1)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#142137" stroke-width="1" />
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#007Eae" stroke-width="1" />
                                 <!-- CAIXA BANK -->
                                 <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/caixabank-logo-alt.png"></image>
                             </g>
@@ -47,29 +47,30 @@
                         </svg>
                         <svg x="100" y="160" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(3)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />                                
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#f5ffe0" stroke-width="1" />
+                                <image transform="translate(10, 10)" width="65" height="65" xlink:href="images/bonpreu.png"></image>
                             </g>
-                        </svg>                       
+                        </svg>
                         <svg x="30" y="40" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(4)">
                                 <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#E79A00" stroke-width="1" />
-                               <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/logo_Odin.png"></image>
+                                <image transform="translate(5, 25)" width="75" height="30" xlink:href="images/ctti_c3.png"></image>
                             </g>
                         </svg>
                         <svg x="170" y="40" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(5)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#92B9E0" stroke-width="1" />                                
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#92B9E0" stroke-width="1" />
                                 <!-- CATSALUT -->
                                 <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/lms-logo2.png"></image>
                             </g>
                         </svg>
                         <svg x="170" y="120" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(6)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#000078" stroke-width="1" />                               
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#000078" stroke-width="1" />
                                 <text transform="translate(18, 7)" x="9" y="25" fill="snow" font-size="14" font-weight="bold">UOC</text>
                                 <text transform="translate(8, 20)" x="9" y="25" fill="snow" font-size="10" font-weight="bold">Universitat</text>
                                 <text transform="translate(10, 30)" x="9" y="25" fill="snow" font-size="10" font-weight="bold">Oberta de</text>
-                                <text transform="translate(10, 40)" x="9" y="25" fill="snow" font-size="10" font-weight="bold">Catalunya</text>   
+                                <text transform="translate(10, 40)" x="9" y="25" fill="snow" font-size="10" font-weight="bold">Catalunya</text>
                             </g>
                         </svg>
                         <svg x="30" y="120" overflow="visible">
@@ -114,15 +115,22 @@
                                     document.getElementById('project-button').style = '';
                                     break;
                                     
-                                 case 4:
-                                    projectTitle = 'Odín - In progress';
-                                    descriptionText = 'Designing the user experience ' +
-                                        'of Odin&#39;s academic platform and its different modules.';
+                                case 3:
+                                    projectTitle = 'Bonpreu';
+                                    descriptionText = "Review and analysis of the organization's intranet.";
 
-                                    tags = ['Accessibility','UX Research', 'UX/UI', 'Rapid prototyping', 'Responsive Web Design', 'Mobile First'];
+                                    tags = ['UX Research', 'Design principles', 'Behavioral design', 'Desktop device'];
                                     document.getElementById('project-button').style = 'display: none;';
                                     break;
-                                   
+
+                                case 4:
+                                    projectTitle = 'Generalitat de Catalunya · CTTI';
+                                    descriptionText = 'Advice and support in the digital transformation of the organization.';
+
+                                    tags = ['UX Research', 'Service Design', 'Communication channels', 'Accessibility'];
+                                    document.getElementById('project-button').style = 'display: none;';
+                                    break;
+                                                                       
                                 case 5:
                                     //CAT SALUT
                                     projectTitle = 'La meva /Salut';
@@ -150,13 +158,13 @@
                                     
                                 case 7:
                                     projectTitle = 'Zoetis';
-                                    descriptionText = 'Evaluation of the website to purchase tea ' +
-                                        'in terms of usability, accessibility and Human-Centered Design (HCD).';
+                                    descriptionText = 'Evaluate and redesign the program for the management of veterinary clinics and ' +
+                                        'laboratories, improving employee efficiency and highlighting guidance and advice ' +
+                                        'as a differential value.';
 
-                                    tags = ['UX Research', 'UX Design', 'Conceptualization', 'Tablet device', 'Fast Prototyping'];
+                                    tags = ['UX Research', 'UX Design', 'Kiosk device', 'Rapid prototyping'];
                                     document.getElementById('project-button').style = 'display: none;';
-                                    break;
-                                    
+                                    break;                                    
                                     
                                 default:
                                     projectTitle = 'Select a project to see its overview';

@@ -47,13 +47,14 @@
                         </svg>
                         <svg x="100" y="160" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(3)">
-                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#297B87" stroke-width="1" />
+                                <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#f5ffe0" stroke-width="1" />
+                                <image transform="translate(10, 10)" width="65" height="65" xlink:href="images/bonpreu.png"></image>
                             </g>
                         </svg>                       
                         <svg x="30" y="40" overflow="visible">
                             <g class="animated-hexagon" onclick="hex_change(4)">
                                 <path d="M0 43L21.5001 6H64.5013L86 43L64.5013 80H21.5001L0 43Z" fill="#E79A00" stroke-width="1" />
-                                <image transform="translate(5, 25)" width="75" height="35" xlink:href="images/logo_Odin.png"></image>
+                                <image transform="translate(5, 25)" width="75" height="30" xlink:href="images/ctti_c3.png"></image>
                             </g>
                         </svg>
                         <svg x="170" y="40" overflow="visible">
@@ -112,12 +113,18 @@
                                     tags = ['UX Research', 'UX/UI', 'Rapid prototyping', 'Mobile App'];
                                     document.getElementById('project-button').style = '';
                                     break;
-                                 case 4:
-                                    projectTitle = 'Odín - En desarrollo';
-                                    descriptionText = 'Diseño de la experiencia de usuario ' +
-                                        'del sistema de gestión académico Odín y sus distintos módulos.';
+                                 case 3:
+                                    projectTitle = 'Bonpreu';
+                                    descriptionText = 'Revisión y análisis de la intranet de la organización.';
 
-                                    tags = ['Accesibilidad','UX Research', 'UX/UI', 'Rapid prototyping', 'Responsive Web Design', 'Mobile First'];
+                                    tags = ['UX Research', 'Principios de diseño', 'Diseño conductual', 'Dispositivo sobremesa'];
+                                    document.getElementById('project-button').style = 'display: none;';
+                                    break;
+                                 case 4:
+                                    projectTitle = 'Generalitat de Catalunya · CTTI';
+                                    descriptionText = 'Asesoramiento y acompañamiento en la transformación digital de la organización.';
+
+                                    tags = ['UX Research', 'Service Design', 'Canales comunicación', 'Accesibilidad'];
                                     document.getElementById('project-button').style = 'display: none;';
                                     break;
                                 case 5:
@@ -145,10 +152,11 @@
                                     break;
                                  case 7:
                                     projectTitle = 'Zoetis';
-                                    descriptionText = 'Evaluación de la web para la venta de té a nivel internacional ' +
-                                        'en términos de usabilidad, accesibilidad y Diseño Centrado en el Usuario (DCU).';
+                                    descriptionText = 'Evaluar y rediseñar el programa para la gestión de las clínicas veterinarias y ' +
+                                        'los laboratorios, mejorando la eficiencia de los empleados y destacando la guía y ' +
+                                        'el asesoramiento como valor diferencial.';
 
-                                    tags = ['UX Research', 'UX Design', 'Conceptualización', 'Dispositivo tablet', 'Fast Prototyping']';
+                                    tags = ['UX Research', 'UX Design', 'Conceptualización', 'Dispositivo quiosco', 'Fast Prototyping'];
                                     document.getElementById('project-button').style = 'display: none;';
                                     break;
                                 default:
